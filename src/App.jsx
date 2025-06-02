@@ -1,8 +1,8 @@
-import About from './components/About.jsx'
+import Header from './components/Header.jsx'
 
 function App() {
     return (
-      <About></About>
+      <Header></Header>
     );
 }
 
