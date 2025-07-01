@@ -5,12 +5,12 @@ import { faCaretRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
     return(
-        <header className = 'pl-8 pt-9'>
-            <h3 className = 'text-lg md:mb-4 text-[#2f549f] dark:text-[#9eb9ef] font-semibold font-mono'> Hi! My name is</h3> 
-            <h1 className = "text-6xl font-bold md:mb-4 text-[#2e2f2f] dark:text-[#cccfdb]">Abdullah Naeem.</h1>
+        <header className = 'pt-9 pl-9'>
+            <h3 className = 'text-lg mb-4 text-[#2f549f] dark:text-[#9eb9ef] font-semibold font-mono'> Hi! My name is</h3> 
+            <h1 className = "text-5xl md:text-6xl font-bold mb-4 text-[#2e2f2f] dark:text-[#cccfdb]">Abdullah Naeem.</h1>
             <p className = "text-lg max-w-2xl dark:text-white"> I'm a Data Science graduate from Simon Fraser University with a passion in data analysis and 
                 transforming data into actionable business insights. I'm always open to collaborating on a new project or having a conversation - feel free to reach out! </p>
-            <nav className = "md:mt-4">
+            <nav className = "mt-4">
                     <ul className = "flex flex-row gap-4">  
                         <li> <a href = "https://github.com/Hav0" target = "_blank" rel = "noopener noreferrer" aria-label = "GitHub" className = 'delay-75 duration-100 ease-in-out'> 
                             <FontAwesomeIcon icon = {faGithub} size = '2x' className='transition hover:-translate-y-1 dark:text-[#9eb9ef] dark:hover:text-white'/></a></li>
