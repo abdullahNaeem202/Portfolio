@@ -6,7 +6,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        'open-menu': {
+            '0%': {transform: 'translateX(100px)'},
+            '100%': {transform: 'translateX(0px)'},
+        },
+      },
+      animation: {
+        'open-menu': 'open-menu 0.25s ease-in-out'
+      }
+    },
   },
   plugins: [],
 }
