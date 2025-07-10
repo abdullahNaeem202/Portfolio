@@ -1,13 +1,15 @@
 import Toggle from './components/Toggle.jsx';
 import Header from './components/Header.jsx'
 import NavigationBar from './components/NavigationBar.jsx'
+import About from './components/About.jsx'
 
 function App() {
     return (
       <>
+        <NavigationBar></NavigationBar>
         <Header></Header>
         <Toggle></Toggle>
-        <NavigationBar></NavigationBar>
+        <About></About>
       </>
 
     );

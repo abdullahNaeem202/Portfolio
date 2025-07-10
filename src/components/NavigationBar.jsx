@@ -1,12 +1,52 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import Toggle from "./Toggle";
 
 function NavigationBar() {
+    // state and setter for mobile menu open or close
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    // state and setter for navbar visible or not visible upon scroll 
+    const [isVisible, setisVisible] = useState(true);
+    // state and setter for checking if the navbar is at the top of the screen to dynamically change color
+    const [isAtTop, setisAtTop] = useState(true);
 
+    // effect function for hiding or showing the navbar 
+
+    useEffect(() => {
+        let lastScrollYPos = window.scrollY;
+
+        const showNavBar = () => {
+            const currScrollYPos = window.scrollY;
+            
+            setisAtTop(currScrollYPos <= 10);
+
+            if(currScrollYPos > lastScrollYPos && currScrollYPos > 100) {
+                setisVisible(false);
+            }else{
+                setisVisible(true); 
+            }
+
+            lastScrollYPos = currScrollYPos;
+        }
+        window.addEventListener("scroll", showNavBar)
+
+        return () => window.removeEventListener("scroll", showNavBar)
+    }, [])
+
+    // effect function for determining if the scrollbar is shown or not when the mobile menu is open or not 
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+
+        return () => document.body.style.overflow = '';
+    }, [isMobileMenuOpen])
+    
     // event handler to handle the case when the mobile menu icon is clicked - isMobileMenuOpen will update
 
     const toggleIsMobileMenuOpen = () => {
@@ -19,16 +59,19 @@ function NavigationBar() {
     }
 
     return (
-        <nav className="bg-[#d9dde0] dark:bg-[#1a202c] fixed top-0 w-full py-6">
-            {/* inner div for the navigation bar container - holds all of our links and the toggle*/}
+        <>
+        <nav className={`fixed w-full top-0 py-3 transition duration-200 z-50
+        ${isVisible ? "translate-y-0": "-translate-y-full"} 
+        ${isAtTop ? "bg-[#d9dde0] dark:bg-[#1a202c]" : "bg-[#d1d4d7] dark:bg-[#212734]"}` }>
+            {/* inner div for the navigation bar container - holds all of our links and the toggle, #262d3c*/}
             <div className="mx-auto flex items-center pr-5 justify-end"> 
                 {/* div that will position each link in the container*/}
                 <div className="hidden md:flex items-center justify-end space-x-8 w-full pr-4">
-                    <div>
-                        <Toggle isGlobal = {true} />
+                    <div> 
+                        <Toggle isGlobal={true} />
                     </div>
-                    {/*divs for each element of our container - About (CHANGE LATER TO LINKS)*/}
-                    <div className= "dark:text-[#cccfdb] font-medium text-lg">About</div>
+                    {/*anchor tag directed to section ID for "About" section*/} 
+                    <a href = "#about" className="text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed] font-bold text-lg">About</a>
                     {/*divs for each element of our container - Experience */}
                     <div className = "dark:text-[#cccfdb] font-medium text-lg">Experience</div>
                     {/*divs for each element of our container - Projects */}
@@ -51,16 +94,20 @@ function NavigationBar() {
                     </button>
                 </div>
             </div>
-             {/* sidebar mobile menu*/}
+            </nav>
+            {/* sidebar mobile menu*/}
             {isMobileMenuOpen && (
-            <nav className="md:hidden fixed h-full w-screen dark:bg-[#1a202c]/70 bg-[#d9dde0]/70 top-0 right-0 backdrop-blur-sm animate-open-menu">
+            <nav className="md:hidden z-50 fixed h-full w-screen dark:bg-[#1a202c]/70 bg-[#d9dde0]/70 top-0 right-0 animate-open-menu">
+                <div className="fixed top-0 right-0 backdrop-blur-sm w-screen h-full z-50" onClick={closeMobileMenu}>
+                </div>
                 <div className="flex flex-col items-center dark:bg-[#262d3a] bg-[#c3cad0] absolute top-0 right-0 h-screen p-8 space-y-8 z-50 w-56">
                     {/* Button to close the mobile menu */}
                     <button onClick = {closeMobileMenu}>
                         <FontAwesomeIcon icon = {faX} aria-label = 'MobileMenuClose' className=" dark:text-[#cccfdb] fa-2xl mb-10"/>
                     </button>
-                    {/* divs for each menu item on mobile - About (CHANGE LATER TO LINKS)*/}
-                    <div className="block py-4 text-xl font-bold dark:text-[#cccfdb]">About</div>
+                    {/*anchor tag directed to section ID for "About" section*/} 
+                    <a href = '#about' className="block py-4 text-xl font-bold 
+                    text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed]">About</a>
                     {/* divs for each menu item on mobile - Experiencet*/}
                     <div className="block py-4 text-xl font-bold dark:text-[#cccfdb]">Experience</div>
                     {/* divs for each menu item on mobile - Projects*/}
@@ -81,9 +128,8 @@ function NavigationBar() {
                     </div>
                 </div>
             </nav> )}
-
-        </nav>
-    )
+            </>
+    );
 }
 
 export default NavigationBar
