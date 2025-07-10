@@ -5,7 +5,7 @@ import { faCaretRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
     return(
-        <header className = 'pt-9 pl-9'>
+        <header className = 'min-h-screen pt-64 pl-12 md:pl-20'>
             <h3 className = 'text-lg mb-4 text-[#2f549f] dark:text-[#9eb9ef] font-semibold font-mono'> Hi! My name is</h3> 
             <h1 className = "text-5xl md:text-6xl font-bold mb-4 text-[#2e2f2f] dark:text-[#cccfdb]">Abdullah Naeem.</h1>
             <p className = "text-lg max-w-2xl dark:text-white"> I'm a Data Science graduate from Simon Fraser University with a passion in data analysis and 
