@@ -72,8 +72,8 @@ function NavigationBar() {
                     </div>
                     {/*anchor tag directed to section ID for "About" section*/} 
                     <a href = "#about" className="text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed] font-bold text-lg">About</a>
-                    {/*divs for each element of our container - Experience */}
-                    <div className = "dark:text-[#cccfdb] font-medium text-lg">Experience</div>
+                    {/*anchor tag directed to section ID for "Expereince" section */}
+                    <a href = "#experience" className = "text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed] font-bold text-lg">Experience</a>
                     {/*divs for each element of our container - Projects */}
                     <div className = "dark:text-[#cccfdb] font-medium text-lg"> Projects</div>
                     {/*divs for each element of our container - Contact */}
@@ -109,7 +109,8 @@ function NavigationBar() {
                     <a href = '#about' className="block py-4 text-xl font-bold 
                     text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed]">About</a>
                     {/* divs for each menu item on mobile - Experiencet*/}
-                    <div className="block py-4 text-xl font-bold dark:text-[#cccfdb]">Experience</div>
+                    <a href = "#experience" className="block py-4 text-xl font-bold 
+                    text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed]">Experience</a>
                     {/* divs for each menu item on mobile - Projects*/}
                     <div className="block py-4 text-xl font-bold dark:text-[#cccfdb]">Projects</div>
                     {/* divs for each menu item on mobile - Contact*/}
