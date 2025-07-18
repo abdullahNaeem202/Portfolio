@@ -13,22 +13,22 @@ function About() {
           </h2>   
         </div>
         {/* Div That Lays Out Content Using Grid */}
-        <div className="grid md:grid-cols-1 p-5 lg:grid-cols-[2fr_0.1fr_1fr] gap-8 md:gap-5 lg:gap-3 md:px-28">
+        <div className="grid grid-cols-1 p-5 lg:grid-cols-[2fr_0.1fr_1fr] gap-8 md:gap-5 lg:gap-3 md:px-28">
           {/* Div That Structures each Paraagraph Description About Myself*/}
             <div>
                {/* Paragraph 1 - Introduction*/}
-               <p className="dark:text-white text-lg mb-5">
+               <p className="dark:text-white text-lg mb-5 md:max-w-xl">
                   Hi, nice to meet you! I'm Abdullah, an aspiring data analyst based in Richmond BC. 
                </p>
                 {/* Paragraph 2 - A bit about my educational background*/}
-               <p className="dark:text-white text-lg mb-5">
+               <p className="dark:text-white text-lg mb-5 md:max-w-2xl ">
                   I hold a Bachelor of Science in Data Science with a 
                   minor in Computing Science from Simon Fraser University. I was also honored to receive a  <a href = "https://www.sfu.ca/stat-actsci/all-students/awards/endow.html" target = "_blank" rel = "noopener noreferrer" 
                   className="relative inline-block after:content-[''] after:absolute after:h-[1px] after:left-0 after:bottom-0 after:w-[0px] after:dark:bg-[#9eb9ef] after:bg-[#2f549f] after:transition-[width] after:duration-300
                   hover:after:w-full dark:text-[#9eb9ef] dark:hover:text-[#9eb9ef] hover:text-[#2f549f] text-[#2f549f] font-medium"> departmental award</a>  from the Statistics and Actuarial Science program for the year 2023-2024. 
                </p>
                 {/* Paragraph 3 - Hook, what led me to pursue Data Science */}
-               <p className="dark:text-white text-lg mb-5">
+               <p className="dark:text-white text-lg mb-5 md:max-w-2xl">
                   "What qualities make a strong data-driven recommendation?", "Why are data scientists essential in driving business growth?". These were questions that sparked my curiosity
                   and led me to pursue Data Science. My passion for solving real-world problems has enabled me to explore areas such as machine learning, statistical reasoning, and actuarial science.
                </p>
@@ -48,11 +48,11 @@ function About() {
 
             </div>
              {/* Div That acts as a spacing between the paragraphs and the image*/}
-            <div className="hidden lg:block">
+            <div className="hidden md:block">
             </div>
             {/* Div That contains the image */}
-            <div className="md:p-2 mx-auto">
-               <img className = "rounded-lg w-full lg:max-w-[415px] max-w-[325px] dark:shadow-[0_0_5px_rgba(255,255,255,0.2)] shadow-lg grayscale hover:grayscale-0 transition-all duration-300" 
+            <div className="md:p-9 lg:p-2 p-9 mx-auto">
+               <img className = "rounded-lg scale-110 lg:w-[325px] md:w-[325px] w-[285px] min-w-[225px] dark:shadow-[0_0_5px_rgba(255,255,255,0.2)] shadow-lg grayscale hover:grayscale-0 transition-all duration-300" 
                src='/picture.jpg' 
                alt = 'Profile Picture' 
                loading='lazy'>
