@@ -49,19 +49,19 @@ function Experience () {
     return (
         <section id = 'experience' className="min-h-screen md:pt-40 lg:pt-52 pt-28 p-5">
             {/* Div That Seperates Heading from Main Content */}
-            <div className="md:px-28 lg:px-40 p-5 md:p-7 mb-3 md:mb-2">
+            <div className="px-2 md:px-12 lg:px-40 p-5 md:p-7 mb-3 md:mb-2">
                 {/* Section Heading */}
                 <h2 className="relative text-lg md:text-2xl font-[650] text-[#2f549f] dark:text-[#9eb9ef] font-mono
-                after:content-[''] after:inline-block after:align-middle after:ml-3 after:h-[2px] after:w-[200px] after:bg-[#3b3c3c] after:dark:bg-[#cccfdb]">My Career Journey
+                after:content-[''] after:inline-block after:align-middle after:ml-3 after:h-[2px] after:w-[100px] md:after:w-[300px] lg:after:w-[200px] after:bg-[#3b3c3c] after:dark:bg-[#cccfdb]">My Career Journey
                 </h2>
             </div>
             {/* Div That Stores Each Button and Content Section placed to the right of the buttons*/}
-            <div className="flex flex-col md:flex-row gap-5 p-5 md:p-7 md:px-28 lg:px-40">
+            <div className="flex flex-col md:flex-row gap-5 p-5 md:p-7 px-2 md:px-12 lg:px-40">
                 {/* Div That Contains Each Button*/}
-                <div className="flex md:max-w-[450px] lg:max-w-3xl md:flex-col gap-5 items-start">   
+                <div className="flex max-w-[400px] md:max-w-[450px] lg:max-w-3xl md:flex-col gap-3 items-start">   
                     {tabs.map((tab, index) => {
                         return (
-                        <div key = {index} className="relative">
+                        <div key = {index} className="relative ">
                             {SelectedTab === tab.id && (
                                 <>
                                      <span
@@ -77,7 +77,7 @@ function Experience () {
                             onClick = {() => {
                                 setSelectedTab(tab.id);
                         }} 
-                        className = {`rounded font-semibold whitespace-nowrap ${
+                        className = {`rounded font-semibold w-full break-words text-center ${
                             SelectedTab === tab.id ? "bg-[#b5b8bb] dark:bg-[#384256] p-2  dark:text-white text-[#2e2f2f]" : "bg-[#d9dde0] dark:bg-[#1a202c] p-2 text-black dark:text-white"}`}
                         >
                             {tab.title} </button> </div> )

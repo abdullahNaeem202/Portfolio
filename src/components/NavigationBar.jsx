@@ -74,10 +74,10 @@ function NavigationBar() {
                     <a href = "#about" className="text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed] font-bold text-lg">About</a>
                     {/*anchor tag directed to section ID for "Expereince" section */}
                     <a href = "#experience" className = "text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed] font-bold text-lg">Experience</a>
-                    {/*divs for each element of our container - Projects */}
-                    <div className = "dark:text-[#cccfdb] font-medium text-lg"> Projects</div>
-                    {/*divs for each element of our container - Contact */}
-                    <div className = "dark:text-[#cccfdb] font-medium text-lg">Contact</div>
+                    {/*anchor tag directed to secion ID for "Projects" section*/}
+                    <a href = "#projects" className = "text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed] font-bold text-lg">Projects</a>
+                    {/*anchor tag directed to section ID for "Contact Me" section */}
+                    <a href = "#contact" className = "text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed] font-bold text-lg">Contact</a>
                      {/*div for Resume Button */}
                     <div>
                         <a href = '/Abdullah_Naeem_Resume.pdf' target = "_blank" rel = "noopener noreferrer">
@@ -100,7 +100,7 @@ function NavigationBar() {
             <nav className="md:hidden z-50 fixed h-full w-screen dark:bg-[#1a202c]/70 bg-[#d9dde0]/70 top-0 right-0 animate-open-menu">
                 <div className="fixed top-0 right-0 backdrop-blur-sm w-screen h-full z-50" onClick={closeMobileMenu}>
                 </div>
-                <div className="flex flex-col items-center dark:bg-[#262d3a] bg-[#c3cad0] absolute top-0 right-0 h-screen p-8 space-y-8 z-50 w-56">
+                <div className="flex flex-col items-center dark:bg-[#262d3a] bg-[#c3cad0] absolute top-0 right-0 h-screen p-8 space-y-5 md:space-y-10 z-50 w-56">
                     {/* Button to close the mobile menu */}
                     <button onClick = {closeMobileMenu}>
                         <FontAwesomeIcon icon = {faX} aria-label = 'MobileMenuClose' className=" dark:text-[#cccfdb] fa-2xl mb-10"/>
@@ -108,13 +108,15 @@ function NavigationBar() {
                     {/*anchor tag directed to section ID for "About" section*/} 
                     <a href = '#about' className="block py-4 text-xl font-bold 
                     text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed]">About</a>
-                    {/* divs for each menu item on mobile - Experiencet*/}
+                    {/*anchor tag directed to secion ID for "Experience" section*/}
                     <a href = "#experience" className="block py-4 text-xl font-bold 
                     text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed]">Experience</a>
-                    {/* divs for each menu item on mobile - Projects*/}
-                    <div className="block py-4 text-xl font-bold dark:text-[#cccfdb]">Projects</div>
+                    {/*anchor tag directed to secion ID for "Projects" section*/}
+                    <a href = "#projects" className="block py-4 text-xl font-bold 
+                    text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed]">Projects</a>
                     {/* divs for each menu item on mobile - Contact*/}
-                    <div className="block py-4 text-xl font-bold dark:text-[#cccfdb]">Contact</div>
+                    <a href = "#contact" className="block py-4 text-xl font-bold 
+                    text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed]">Contact</a>
                      {/* divs for each menu item on mobile - Resume Button*/}
                     <div className="block py-4 text-xl font-bold dark:text-[#cccfdb]">
                         <a href = '/Abdullah_Naeem_Resume.pdf' target = "_blank" rel = "noopener noreferrer">
@@ -124,7 +126,7 @@ function NavigationBar() {
                         </a>
                     </div>
                     {/* dark and light mode toggle for accessibility - positioning controlled by prop in toggle.jsx*/}
-                    <div className = 'py-2'>
+                    <div className = 'py-4'>
                         <Toggle isGlobal = {true}/>
                     </div>
                 </div>
