@@ -15,13 +15,13 @@ Welcome to my portfolio website! This is a place for me to showcase who I am, my
 - **Responsive Design**: Works smoothly across multiple screen sizes and devices.
 - **Dark and Light Mode Toggle**: Easily switch between dark and light mode for better viewability.
 - **Project Cards**: Interactive and hover-animated project cards that include a short description, tech stack, and GitHub link for each of my projects.
-- **Tech Stack Display**: Each projecvt card highlights what technologies I used. 
+- **Tech Stack Display**: Each project card highlights what technologies I used. 
 - **Interactive Career Journey Layout**: Dynamically switch between my expderiences and learn more with hover-animated links.
 
 ## Future Improvements 
 
-- [ ] Project card documentation (improve layout and add depth)
-- [ ] Continue to add more projects and experiences as I learn new skills 
+- [ ] Project card documentation (improve layout and add depth).
+- [ ] Continue to add more projects and experiences as I learn new skills.
 - [ ] Add more interactivity and experiemnt with new tools.
 
 ## How to Run 
