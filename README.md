@@ -26,7 +26,7 @@ Welcome to my portfolio website! This is a place for me to showcase who I am, my
 
 ## How to Run 
 
-View my portfolio here: ... or run a clone of this repository on your local machine:
+View my portfolio here: [https://abdullahnaeem.com/] or run a clone of this repository on your local machine:
 
 1. Clone my repository 
 2. Navigate to the projects directory and run `npm install`
