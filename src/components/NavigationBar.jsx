@@ -119,7 +119,7 @@ function NavigationBar() {
                     text-[#3b5383] hover:text-[#75609b] dark:text-[#9eb9ef] dark:hover:text-[#d0bfed]">Contact</a>
                      {/* divs for each menu item on mobile - Resume Button*/}
                     <div className="block py-4 text-xl font-bold dark:text-[#cccfdb]">
-                        <a href = '/Abdullah_Naeem_Resume.pdf' target = "_blank" rel = "noopener noreferrer">
+                        <a href = '/AbdullahNaeemResume.pdf' target = "_blank" rel = "noopener noreferrer">
                             <button className="font-medium transition rounded border-2 hover:-translate-y-1 hover:ring-2
                             hover:ring-[#6d7a95] dark:hover:ring-[#d2d4df] duration-100  
                             text-[#2e2f2f] dark:text-[#cccfdb] border-[#2f549f] dark:border-[#9eb9ef] p-2 text-lg shadow-md">Resume</button> 
