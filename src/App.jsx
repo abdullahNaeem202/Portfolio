@@ -5,6 +5,7 @@ import About from './components/About.jsx'
 import Experience from './components/Experience.jsx';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
         <Experience></Experience>
         <Projects></Projects>
         <Contact></Contact>
+        <Analytics></Analytics>
       </div>
 
       </>
