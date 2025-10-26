@@ -5,7 +5,27 @@ function Experience () {
     // create a tabs array to store ids and titles for each button 
     const tabs = [
         {
-            id: 0, 
+            id: 0,
+            title: "Ocarina Studios",
+            content: (
+                <div>
+                    <h3 className = 'text-lg lg:w-[450px] md:w-[427px] mb-2 md:mb-3'> <span className = 'text-[#2f549f] dark:text-[#9eb9ef] font-bold'>Data Analyst&nbsp; </span> 
+                    <a href = "https://www.linkedin.com/company/ocarina-studios-inc/?originalSubdomain=ca" target = "_blank" rel = "noopener noreferrer" 
+                    className="relative inline-block after:content-[''] after:absolute after:h-[0.5px] after:left-0 after:bottom-0 after:w-[0px] after:dark:bg-[#c28fd4] after:bg-[#874aa0] after:transition-[width] after:duration-300
+                    hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono"> @ Ocarina Studios</a></h3>
+                    <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>January 2025 - April 2025</p>
+                    <ul>
+                        <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[670px] md:text-md lg:text-lg"> Analyzed user behaviour data collected from ironSource and 
+                        Google Analytics 4 for a mobile game startup.</li>
+                        <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Implemented a Python pipeline to clean, transform, and analyze data collected over a 6-week period during a game testing and market research phase, supporting the studio’s launch strategy for a new mobile game. </li>
+                        <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Performed time series analysis to estimate customer lifetime value and forecast churn rate trends, providing actionable insights to guide budget allocation and design future ad campaigns.</li>
+                        <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Proposed user segmentation strategies and stopping rule thresholds to support CRM and marketing optimization goals.</li>
+                    </ul>
+                </div>
+                )
+        },
+        {
+            id: 1, 
             title: "Statistics Canada",
             content: (
             <div>
@@ -15,15 +35,15 @@ function Experience () {
                 hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono"> @ Statistics Canada</a></h3>
                 <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>January 2023 - April 2023</p>
                 <ul>
-                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Performed a compression analysis on a variety of file types and reduced file sizes by 40%, leading to cost savings in cloud services costs and speeding up workflows.</li>
-                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Resolved issues in the internal StatsCan record matching platform (CanSIS) related to repeated record identifiers, improving matching accuracy by 15% and leading to a recommended solution that was implemented by my division. </li>
-                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Improved an address parser by utilizing regular expressions to successfully identify 365,169 incorrect address formats, boosting the tool’s overall accuracy and reliability. </li>
+                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Performed a compression analysis on a variety of file types in Python, achieving a 40% reduction in file sizes, which improved workflow efficiency and lowered cloud storage costs.</li>
+                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Resolved issues in the internal StatsCan record matching platform (CanSIS) related to repeated record identifiers, improving matching accuracy by 15%. </li>
+                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Improved an address parsing tool by using Regex to successfully identify 365,000 incorrect formats, boosting the tool’s overall accuracy and enhancing data quality. </li>
                 </ul>
             </div>
             )
         },
         {
-            id:1, 
+            id:2, 
             title: "SFU Data Science Student Society",
             content: (
                 <div>
@@ -33,10 +53,9 @@ function Experience () {
                     hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono" > @ SFU DSSS</a> </h3>
                     <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>April 2022 - April 2025</p>
                     <ul>
-                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Organized and led 5+ events for the Data Science program at SFU, 
-                    including discussion panels with industry professionals and technical workshops, helping to strengthen community engagement and enhance learning opportunities for Data Science undergraduates.</li>
-                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Developed targeted outreach strategies that doubled student engagement for events, leading to consistently high turnout. </li>
-                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Supported the onboarding for new team members, helping to build a more connected student community. </li>
+                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Elected as Events Director with 61.3% of votes in a departmental election, demonstrating strong peer recognition of leadership.</li>
+                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Organized 5+ events and workshops for undergraduate students at SFU, including discussion panels with industry professionals and hackathons, helping to strengthen community engagement and enhance student learning opportunities. </li>
+                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Developed targeted outreach strategies that doubled event attendance, contributing to increased student interest in the Data Science program </li>
                     </ul>
                 </div>
             )
