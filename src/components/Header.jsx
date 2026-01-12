@@ -18,7 +18,7 @@ function Header() {
                         <li> <a href = "https://www.linkedin.com/in/naeemabdullah2002/" target = "_blank" rel = "noopener noreferrer" aria-label = "LinkedIn" className ='delay-75 duration-100 ease-in-out '> 
                             <FontAwesomeIcon icon = {faLinkedin} className=' text-3xl md:text-4xl transition hover:-translate-y-1 dark:text-[#9eb9ef] dark:hover:text-white'/></a> </li>
                         <li> <FontAwesomeIcon icon = {faCaretRight} className = 'dark:text-white text-3xl md:text-4xl'/> </li>
-                        <li> <a href = "mailto: abdullahnaeem@hotmail.ca" aria-label = "Email" className ='delay-75 duration-100 ease-in-out '> 
+                        <li> <a href = "mailto: abdunaeem002@gmail.com" aria-label = "Email" className ='delay-75 duration-100 ease-in-out '> 
                             <FontAwesomeIcon icon = {faEnvelope} className=' text-3xl md:text-4xl transition hover:-translate-y-1 dark:text-[#9eb9ef] dark:hover:text-white'/></a></li>
                     </ul>
             </nav>
