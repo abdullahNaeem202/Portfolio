@@ -39,10 +39,10 @@ function About() {
                {/* List - Technologies I have experience with*/}
                <ul className="grid grid-cols-[200px_minmax(150px,_2fr)] md:grid-cols-[250px_minmax(150px,_2fr)] gap-2">
                   <li className="before:content-['▸'] before:dark:text-[#9eb9ef] before:text-md before:mr-2 font-mono text-sm dark:text-white">Python3</li>
-                  <li className="before:content-['▸'] before:dark:text-[#9eb9ef] before:text-md before:mr-2 font-mono text-sm dark:text-white">JavaScript</li>
+                  <li className="before:content-['▸'] before:dark:text-[#9eb9ef] before:text-md before:mr-2 font-mono text-sm dark:text-white">PyTorch</li>
                   <li className="before:content-['▸'] before:dark:text-[#9eb9ef] before:text-md before:mr-2 font-mono text-sm dark:text-white">R</li>
                   <li className="before:content-['▸'] before:dark:text-[#9eb9ef] before:text-md before:mr-2 font-mono text-sm dark:text-white">Firebase</li>
-                  <li className="before:content-['▸'] before:dark:text-[#9eb9ef] before:text-md before:mr-2 font-mono text-sm dark:text-white">HTML/CSS</li>
+                  <li className="before:content-['▸'] before:dark:text-[#9eb9ef] before:text-md before:mr-2 font-mono text-sm dark:text-white">Docker</li>
                   <li className="before:content-['▸'] before:dark:text-[#9eb9ef] before:text-md before:mr-2 font-mono text-sm dark:text-white">Power BI</li>
                </ul>
 
