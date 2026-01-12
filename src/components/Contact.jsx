@@ -25,7 +25,7 @@ function Contact () {
                         <FontAwesomeIcon icon={faLinkedin} className="text-[#0072b1]" />
                         <span>LinkedIn</span>
                     </a>
-                    <a href="mailto: abdullahnaeem@hotmail.ca" 
+                    <a href="mailto: abdunaeem002@gmail.com" 
                         className="flex items-center gap-2 px-5 py-1 rounded-full bg-[#f2f3f4] dark:bg-[#e2e2e2] text-[#1d1d1d] font-mono shadow-sm hover:scale-105 hover:shadow-xl dark:shadow-[0_0_5px_rgba(255,255,255,0.2)] transition duration-150">
                         <FontAwesomeIcon icon={faEnvelope} className="text-[#0072b1]" />
                         <span>Email</span>
