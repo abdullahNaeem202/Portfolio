@@ -33,7 +33,7 @@ function Experience () {
                 <a href = "https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch3/5214780-eng.htm" target = "_blank" rel = "noopener noreferrer" 
                 className="relative inline-block after:content-[''] after:absolute after:h-[0.5px] after:left-0 after:bottom-0 after:w-[0px] after:dark:bg-[#c28fd4] after:bg-[#874aa0] after:transition-[width] after:duration-300
                 hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono"> @ Statistics Canada</a></h3>
-                <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>January 2023 - April 2023</p>
+                <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>January 2023 - August 2023</p>
                 <ul>
                     <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Analyzed existing manual business processes for record matching and address parsing and proposed automated solutions using Python and Regex, leading to a 25% decrease in manual reporting efforts. </li>
                     <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Wrote detailed system-level requirements and test cases that improved internal platform matching accuracy by 15% and reduced storage costs by 40% on Azure, adding workflow efficiency. </li>
