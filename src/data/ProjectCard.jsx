@@ -33,6 +33,7 @@ const cardData = [
             "Matplotlib",
             "Tableau"
         ],
+        researchPaperLink: '/paper.pdf',
     }
     ,
     {

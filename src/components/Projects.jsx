@@ -1,6 +1,7 @@
 import cardData from '../data/ProjectCard.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
 function Projects () {
     return (
@@ -51,6 +52,11 @@ function Projects () {
                                 <a href = {project.GitHubLink} target = "_blank" rel = "noopener noreferrer" aria-label = "GitHub" className = 'delay-75 duration-100 ease-in-out'> 
                                 <FontAwesomeIcon icon = {faGithub} size = '2x' className='transition hover:-translate-y-1 text-[#1a3467]  hover:text-black dark:text-black dark:hover:text-[#2e2f2f]'/></a>
                             )}
+                            {project.researchPaperLink && (
+                                <a href={project.researchPaperLink} target="_blank" rel="noopener noreferrer" aria-label="Research Paper" className='delay-75 duration-100 ease-in-out ml-4'>
+                                 <FontAwesomeIcon icon={faFileLines} size='2x' className='transition hover:-translate-y-1 text-[#1a3467] hover:text-black dark:text-black dark:hover:text-[#2e2f2f]'/>
+        </a>
+    )}
                         </div>
                 
                     </div>
