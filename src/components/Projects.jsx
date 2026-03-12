@@ -1,4 +1,4 @@
-import cardData from '../data/ProjectCard';
+import cardData from '../data/ProjectCard.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
