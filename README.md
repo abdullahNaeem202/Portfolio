@@ -20,7 +20,7 @@ Welcome to my portfolio website! This is a place for me to showcase who I am, my
 
 ## Future Improvements 
 
-- [ ] Project card documentation (improve layout and add depth).
+- [x] Project card documentation (improve layout and add depth).
 - [ ] Continue to add more projects and experiences as I learn new skills.
 - [ ] Add more interactivity and experiemnt with new tools.
 
