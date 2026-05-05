@@ -3,9 +3,27 @@ import { useEffect } from "react";
 
 function Experience () {
     // create a tabs array to store ids and titles for each button 
-    const tabs = [
+  const tabs = [
+      {
+        id: 0,
+        title: "Oxford Learning Richmond",
+        content: (
+            <div>
+                <h3 className = 'text-lg lg:w-[450px] md:w-[427px] mb-2 md:mb-3'> <span className = 'text-[#2f549f] dark:text-[#9eb9ef] font-bold'>Academic Tutor&nbsp; </span> 
+                <a href = "https://www.linkedin.com/company/oxford-learning-center/posts/?feedView=all" target = "_blank" rel = "noopener noreferrer" 
+                className="relative inline-block after:content-[''] after:absolute after:h-[0.5px] after:left-0 after:bottom-0 after:w-[0px] after:dark:bg-[#c28fd4] after:bg-[#874aa0] after:transition-[width] after:duration-300
+                hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono"> @ Oxford Learning Center</a></h3>
+                <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>September 2025 - Present</p>
+                <ul>
+                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[670px] md:text-md lg:text-lg"> Tutored 25+ students across core subjects including grade 11/12, AP, SSAT, and SAT preparation.</li>
+                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Tailored teaching approaches to each student’s learning style, driving consistent and measurable academic progress. </li>
+                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Collaborated with center staff to uphold Oxford Learning’s standards of excellence and ensure smooth daily operations</li>
+                </ul>
+            </div>
+            )
+      },
         {
-            id: 0,
+            id: 1,
             title: "Ocarina Studios",
             content: (
                 <div>
@@ -24,25 +42,8 @@ function Experience () {
                 )
         },
         {
-            id: 1, 
-            title: "Statistics Canada",
-            content: (
-            <div>
-                <h3 className = 'text-lg lg:w-[450px] md:w-[427px] mb-2 md:mb-3'> <span className = 'text-[#2f549f] dark:text-[#9eb9ef] font-bold'>Statistics Analyst Intern&nbsp; </span> 
-                <a href = "https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch3/5214780-eng.htm" target = "_blank" rel = "noopener noreferrer" 
-                className="relative inline-block after:content-[''] after:absolute after:h-[0.5px] after:left-0 after:bottom-0 after:w-[0px] after:dark:bg-[#c28fd4] after:bg-[#874aa0] after:transition-[width] after:duration-300
-                hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono"> @ Statistics Canada</a></h3>
-                <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>January 2023 - August 2023</p>
-                <ul>
-                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Developed and deployed a Python-based data storage implementation on AWS Azure by streaming large datasets to benchmark speed, scalability, and memory usage across multiple formats; completed and presented results within 2-weeks and cut costs by 40%. </li>
-                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Enhanced an address parsing tool using string processing and pattern detection in Regex, identifying 365,000+ incorrect address formats and improving overall parsing accuracy.  </li>
-                </ul>
-            </div>
-            )
-        },
-        {
-            id:2, 
-            title: "SFU Data Science Student Society",
+            id: 2, 
+            title: "Data Science Student Society",
             content: (
                 <div>
                     <h3 className = 'text-lg lg:w-[450px] md:w-[325px mb-2 md:mb-3'> <span className="text-[#2f549f] dark:text-[#9eb9ef] font-bold">Director of Events&nbsp;  </span>
@@ -56,7 +57,24 @@ function Experience () {
                     </ul>
                 </div>
             )
-        },
+    },
+    {
+        id: 3, 
+        title: "Statistics Canada",
+        content: (
+        <div>
+            <h3 className = 'text-lg lg:w-[450px] md:w-[427px] mb-2 md:mb-3'> <span className = 'text-[#2f549f] dark:text-[#9eb9ef] font-bold'>Statistics Analyst Intern&nbsp; </span> 
+            <a href = "https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch3/5214780-eng.htm" target = "_blank" rel = "noopener noreferrer" 
+            className="relative inline-block after:content-[''] after:absolute after:h-[0.5px] after:left-0 after:bottom-0 after:w-[0px] after:dark:bg-[#c28fd4] after:bg-[#874aa0] after:transition-[width] after:duration-300
+            hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono"> @ Statistics Canada</a></h3>
+            <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>January 2023 - August 2023</p>
+            <ul>
+                <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Developed and deployed a Python-based data storage implementation on AWS Azure by streaming large datasets to benchmark speed, scalability, and memory usage across multiple formats; completed and presented results within 2-weeks and cut costs by 40%. </li>
+                <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Enhanced an address parsing tool using string processing and pattern detection in Regex, identifying 365,000+ incorrect address formats and improving overall parsing accuracy.  </li>
+            </ul>
+        </div>
+        )
+    },
     ];
 
     // state and setter for determining which button is active
