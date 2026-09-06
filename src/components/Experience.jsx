@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 function Experience () {
     // create a tabs array to store ids and titles for each button 
@@ -15,9 +15,11 @@ function Experience () {
                 hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono"> @ Oxford Learning Center</a></h3>
                 <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>September 2025 - Present</p>
                 <ul>
-                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[670px] md:text-md lg:text-lg"> Tutored 25+ students across core subjects including grade 11/12, AP, SSAT, and SAT preparation.</li>
-                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Tailored teaching approaches to each student’s learning style, driving consistent and measurable academic progress. </li>
-                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Collaborated with center staff to uphold Oxford Learning’s standards of excellence and ensure smooth daily operations</li>
+                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[670px] md:text-md lg:text-lg"> Tutored 25+ students in Grade 11/12 and AP coursework, alongside SSAT and SAT exam preparation.</li>
+                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Tailored teaching approaches to match each student’s learning style and pace by providing regular practice material
+                    and feedback. </li>
+                    <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Developed a custom project-based Python curriculum to teach core concepts in programming, incorporating
+                    interactive coding exercises to reinforce concepts.</li>
                 </ul>
             </div>
             )
@@ -33,10 +35,14 @@ function Experience () {
                     hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono"> @ Ocarina Studios</a></h3>
                     <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>January 2025 - April 2025</p>
                     <ul>
-                        <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[670px] md:text-md lg:text-lg"> Implemented end-to-end Python ETL/ELT pipelines for data ingestion, transformation, modelling, and visualization, replacing manual Excel workflows and improving reporting efficiency.  </li>
-                        <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Performed time-series modelling to estimate customer lifetime value (CLTV) and forecast churn rate trends, informing marketing budget allocation decisions and enhancing data literacy.  </li>
-                        <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Optimized SQL queries using advanced joins and aggregations across marketing datasets, removing duplicate and inconsistent records and improving reporting accuracy by 60%.</li>
-                        <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Developed interactive Tableau dashboards for 5+ stakeholders by analyzing marketing data from Google Analytics 4 and translated findings into actionable insights. </li>
+                        <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[670px] md:text-md lg:text-lg"> Built a CLTV Forecasting pipeline in Python using historical marketing and financial data to establish
+                        baseline KPIs for an A/B testing campaign soft launch. </li>
+                        <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Engineered data preprocessing workflows using Pandas and NumPy, applying time-series modeling to forecast
+                        churn rates and optimize marketing budget allocation.</li>
+                        <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Optimized SQL queries using window functions across marketing databases, reducing query execution times and
+                        boosting reporting accuracy by 60%. </li>
+                        <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Developed Tableau dashboards for 5+ stakeholders using Google Analytics 4 data to track user-acquisition
+                        metrics. </li>
                     </ul>
                 </div>
                 )
@@ -52,8 +58,12 @@ function Experience () {
                     hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono" > @ SFU DSSS</a> </h3>
                     <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>April 2022 - April 2025</p>
                     <ul>
-                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Elected as Events Director with 61.3% of votes in a departmental election, leading planning and execution of Data Science focused events for students. </li>
-                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Organized 5+ technical events and workshops, including industry discussion panels and hackathons, connecting students with professionals and increasing engagement within the department. </li>
+                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Elected Events Director with 61.3% of votes to lead end-to-end planning and execution of department-wide
+                    technical and career events. </li>
+                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Organized technical workshops, hackathons, and industry panels, connecting 200+ students with industry
+                    professionals and faculty. </li>
+                    <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Boosted student participation by collaborating cross-functionally with faculty and alumni representatives and
+                    considering feedback. </li>
                     </ul>
                 </div>
             )
@@ -69,8 +79,10 @@ function Experience () {
             hover:after:w-full dark:text-[#cd9dde] dark:hover:text-[#cd9dde] hover:text-[#874aa0] text-[#874aa0] font-semibold font-mono"> @ Statistics Canada</a></h3>
             <p className = 'text-md font-normal mb-3 md:mb-5 lg:mb-3 dark:text-white'>January 2023 - August 2023</p>
             <ul>
-                <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Developed and deployed a Python-based data storage implementation on AWS Azure by streaming large datasets to benchmark speed, scalability, and memory usage across multiple formats; completed and presented results within 2-weeks and cut costs by 40%. </li>
-                <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Enhanced an address parsing tool using string processing and pattern detection in Regex, identifying 365,000+ incorrect address formats and improving overall parsing accuracy.  </li>
+                <li className="before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Deployed a Python-based ETL and data storage solution on Azure, cutting costs by 40% and delivering
+                results within 2 weeks. </li>
+                <li className = "before:content-['▸'] before:text-3xl before:mr-2 before:dark:text-[#9eb9ef] dark:text-white indent-[-1.45em] pl-7 md:w-[390px] lg:w-[660px] md:text-md lg:text-lg"> Enhanced an address parsing tool using Regex pattern detection, identifying and resolving 365,000+ incorrect
+                address records and improving data validation accuracy. </li>
             </ul>
         </div>
         )
